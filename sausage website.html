@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Beef Sausage</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Page Styles */
+        body {
+            background-image: url('Pink-Gradient-Wallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Text Styling */
+        .sizzle-word {
+            font-family: 'Dancing Script', cursive;
+            font-size: 29px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 13px;
+            z-index: 1;
+        }
+
+        .elevate-word {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 40px;
+            text-align: center;
+            z-index: 1;
+            margin-top: 1px;
+        }
+
+        .taste-word {
+            font-family: 'Caveat', cursive;
+            font-size: 30px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        /* Image Styling */
+        .sausage-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 300px;
+            box-shadow: 3px 3px 50px rgba(109, 108, 108, 0.9);
+            margin-top: -250px;
+            z-index: 0;
+        }
+
+        /* Form Styling */
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            padding: 20px;
+            background: rgba(221, 221, 221, 0.9);
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            max-width: 300px;
+            padding-bottom: 50px;
+        }
+
+        .detail-buttons {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            font-size: 16px;
+            outline: none;
+        }
+
+        .place-order-button {
+            background-color: rgb(27, 250, 27);
+            color: black;
+            font-weight: bold;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: 0.15s;
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .place-order-button:hover {
+            background-color: rgb(20, 200, 20);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .place-order-button:active {
+            opacity: 0.8;
+        }
+
+        /* Layout Styling */
+        .content-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+
+        .main-section {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .main-section {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+        <p class="sizzle-word">Sizzle into satisfaction!</p>
+        <div class="elevate-word">"Elevate your meal with our sausages"</div>
+        <div class="taste-word">Taste the tradition, bite by bite!</div>
+
+        <div class="main-section">
+            <img class="sausage-image" src="sausage-with-white-background-high-quality-ultra-hd_889056-9660.jpg" alt="Delicious Sausage on a white plate">
+            
+            <form class="form-container" style="margin-bottom: 100px;
+            box-shadow: 20px 15px 15px rgba(0, 0, 0, 0.4);">
+                <label for="datetime">Date and Time</label>
+                <input class="detail-buttons" type="datetime-local" id="datetime" required>
+                
+               <label for="contact">Contact Details</label>
+                <input class="detail-buttons" type="text" id="contact" placeholder="Enter your contact details" required>
+                
+                <label for="location">Location</label>
+                <textarea class="detail-buttons" id="location" placeholder="Enter delivery location" required></textarea>
+                
+                <label for="quantity">Quantity</label>
+                <input class="detail-buttons" type="number" id="quantity" placeholder="Enter quantity" required>
+                
+                <button class="place-order-button" type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
